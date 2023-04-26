@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 21 Nis 2023, 00:38:57
+-- Üretim Zamanı: 26 Nis 2023, 04:31:53
 -- Sunucu sürümü: 10.4.24-MariaDB
 -- PHP Sürümü: 7.4.29
 
@@ -18,36 +18,28 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `pdf`
+-- Veritabanı: `vero`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `pdf`
+-- Tablo için tablo yapısı `dosya`
 --
 
-CREATE TABLE `pdf` (
+CREATE TABLE `dosya` (
   `id` int(11) NOT NULL,
-  `dosya` varchar(250) NOT NULL
+  `dosya` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Tablo döküm verisi `pdf`
---
-
-INSERT INTO `pdf` (`id`, `dosya`) VALUES
-(37, 'minaecersum.pdf'),
-(38, 'minaecersum.pdf');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
 --
 
 --
--- Tablo için indeksler `pdf`
+-- Tablo için indeksler `dosya`
 --
-ALTER TABLE `pdf`
+ALTER TABLE `dosya`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -55,10 +47,10 @@ ALTER TABLE `pdf`
 --
 
 --
--- Tablo için AUTO_INCREMENT değeri `pdf`
+-- Tablo için AUTO_INCREMENT değeri `dosya`
 --
-ALTER TABLE `pdf`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+ALTER TABLE `dosya`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
